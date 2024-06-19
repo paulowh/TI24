@@ -21,7 +21,7 @@
 
 ***
 
-## [Wiki TI24](https://github.com/paulowh/TI24.wiki.git)
+## [Wiki TI24](https://github.com/paulowh/TI24/wiki)
 
 ### Como contribuir com a Wiki
 
