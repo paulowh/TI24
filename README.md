@@ -19,6 +19,8 @@
     ```
 6. Após a clonagem abra o repositorio no [VsCode](https://code.visualstudio.com/)
 
+***
+
 ## [Wiki TI24](https://github.com/paulowh/TI24.wiki.git)
 
 ### Como contribuir com a Wiki
