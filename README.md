@@ -9,6 +9,9 @@
     git config --global user.name "seu nome"
     ```
 3. Copie o link do repositorio requerido
+    ```git
+    https://github.com/paulowh/TI24.git
+    ```
 4. Clone o repositorio pelo CMD
     ```git
     git clone link-repositorio
