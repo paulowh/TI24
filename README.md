@@ -51,10 +51,14 @@ As melhore para o uso geral da ferramenta
 
 - Rainbow Brackets & Toggle Bracket Guides & indent-rainbow
     > Agora temos um combo de extensões, o Rainbow Brackets muda as cores do Brackets `parentes(), colchetes[] e chaves{}`, o Toggle Bracket Guides cria uma guia entre a abertura e o fechamento seguindo as mesmas cores do brackets atual e  o indent-rainbow mostra para visualmente a sua indentação.
-  
+<!--  
 ![Rainbow Brackets](./img/image-5.png)
 ![Toggle Bracket Guides](./img/image-6.png)
 ![indent-rainbow](./img/image-15.png)
+-->
+<img src="./img/image-5.png" alt="Rainbow Brackets" width="400"/>
+<img src="./img/image-6.png" alt="Toggle Bracket Guides" width="400"/>
+<img src="./img/image-15.png" alt="indent-rainbow" width="400"/>
 
 > ***ps.*** essa combinação fica boa apenas no tema escuro devido as cores padrões
     
