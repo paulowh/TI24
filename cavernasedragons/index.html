@@ -1,0 +1,82 @@
+<script>
+    function portaMisteriosa() {
+        alert('Você entrou em uma sala')
+        console.log('Você encontrou um bau misterioso e nesse bau havia 3 itens uma espada, longa e dourada, uma armadura linda e reluzente como as estrelas, e um cogumelo misterioso vermelha com bolinhas brancas.')
+        escolhaItem = prompt('Qual o primeiro item que você gostaria de pegar: \n1- espada longa e dourada \n2- armadura linda e reluzente como as estrelas \n3- cogumelo misterioso vermelho com bolinhas brancas. qual você escolhe? ')
+
+        while (escolhaItem < 1 || escolhaItem > 3) {
+            escolhaItem = prompt('Irmão, ta brincando com o sistema? escolhe um item direito, senão você vai ficar sem nada\n\n1- espada longa e dourada \n2- armadura linda e reluzente como as estrelas \n3- cogumelo misterioso vermelho com bolinhas brancas. qual você escolhe?')
+        }
+
+        console.log('Ao escolher o item, todo o bau se fechou e você não conseguiu mais abrir ele para pegar o restante dos itens')
+
+        return escolhaItem
+    }
+
+    function corredorEscuro() {
+        alert('Você decidiu ir até o corredor, andando mais a frente você se depara com uma figura, um \'serzinho\' misterioso, quando ele se depara com você ele começa a gritar: \n - VOCÊ NÃO VAI PASSAR PELO O GOLIN, GOLIN VAI IMPEDIR VOCÊ ')
+        alert('GOLINHO começou a vim correndo em sua direção, você sacou sua arma e foi de frente com ele para uma batalha')
+    }
+
+    var nome = ''
+    var atkJogador = 15
+    var defJogador = 10
+    var vidaJogador = 30
+
+    nome = prompt('Olá jovem aventureiro, me diga qual o seu nome?')
+    alert(nome + ' Seja bem vindo a caverna do DRAGÃO...')
+
+    console.log('Você caiu em um buraco e ao se levantar você se deparou com a seguinte escolha, ao seu lado direito você nota uma porta grande com madeira avermelhada e com o aspecto de velha caindo aos pedaços, e do lado esquerdo você nota um corredor longo e escuro sem conseguir ver o final')
+
+    escolha = prompt('Qual vai ser a sua decisão: \n1- você escolhe seguir a direita (porta misteriosa) \n2- você escolhe seguir a esquerda (corredor escuro)')
+
+    if (escolha == '1') {
+        item = portaMisteriosa()
+        if (item == 1) {
+            atkJogador = atkJogador + 5
+            alert('Ao segurar a espada você sente um força de vontade percorrendo seu corpo com a sabedoria e destreza do rei antigo.')
+        } else if (item == 2) {
+            defJogador = defJogador + 10
+            alert('Ao vestir a armadura, você sente um cosmo entrando em seu corpo com as almas do submundo em seu corpo.')
+        } else if (item == 3) {
+            vidaJogador = vidaJogador + 30
+            alert('Ao consumir o cogumelo (você é estranho, comendo coisas achadas assim do nada) você sente como se tivesse duplicado de tamanho.')
+        }
+        alert('Você sente sua força aumentando \n\natack: ' + atack + '\ndefesa: ' + defesa + '\nvida: ' + vida)
+        corredorEscuro()
+    }
+
+    if (escolha == '2') {
+        corredorEscuro()
+    }
+
+    atkGolin = 12
+    defGolin = 10
+    vidaGolin = 20
+
+    while (vidaGolin > 0 || vidaJogador > 0){
+
+        danoJogador = atkJogador - defGolin
+        if (danoJogador < 0) {
+            vidaGolin = vidaGolin - danoJogador
+            alert(nome + ' deu ' + danoGolin + ' de dano no Golin')
+        } else {
+            alert(nome + ' não conseguiu dar dano no Golin')
+        }
+        
+        danoGolin = atkGolin - defJogador
+        if (danoGolin > 0) {
+            vidaJogador = vidaJogador - danoGolin
+            alert('Golin deu ' + danoGolin + ' de dano no ' + nome)
+        } else {
+            alert('Golin não conseguiu dar dano no ' + nome)
+        }
+
+        if (vidaGolin <= 0 || vidaJogador <= 0) {
+            break            
+        }
+    }
+
+
+
+</script>
