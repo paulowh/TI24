@@ -13,5 +13,34 @@
     max-width: 1920px;
     border: 2px solid #CCCCCC;
     border-radius: 10px;
+
+    overflow: hidden;
+    position: relative;
 }
 
+.carrossel {
+    display: flex;
+
+    transition: transform 1s ease-in-out;
+}
+
+.carrossel-container>button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.carrossel-container>button.anterior{
+    left: 10px;
+}
+
+.carrossel-container>button.proximo{
+    right: 10px;
+}
