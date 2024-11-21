@@ -32,8 +32,23 @@
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
                 <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
             </ul>
+
+            <!-- menu suspenso/hambúrguer para os mais íntimos -->
+            <button class="menu-oculto" onclick="javascript:abrirNav()">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div id="offcanvas" class="menu-oculto" >
+                <button class="fechar" onclick="javascript:fecharNav()">
+                    <i class="bi bi-x"></i>
+                </button>
+                <a href="index.html">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Sobre</a>
+            </div>
         </nav>
     </header>
+
     <section id="banner">
         <main class="carrossel-container">
             <div class="carrossel">
@@ -203,5 +218,6 @@
     </section>
 </body>
 <script src="./assets/js/carrossel.js"></script>
+<script src="./assets/js/offcanvas.js"></script>
 
 </html>
