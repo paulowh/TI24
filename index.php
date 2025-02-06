@@ -1,4 +1,6 @@
-<?php include './includes/header.php' ?>
+<?php 
+$titulo = 'CineBox - Início';
+include './includes/header.php' ?>
 
 <section id="banner">
     <main class="carrossel-container">
@@ -20,6 +22,8 @@
     <h2 class="titulo">Filmes</h2>
     <main class="container">
         <div class="row">
+
+        <?php for ($i = 0; $i < 8; $i++) { ?>
             <div class="col col-3">
                 <figure>
                     <img src="./assets/img/poster/avatar-o-caminho-da-agua.png" alt="Poster Avatar o caminho da água"
@@ -38,128 +42,8 @@
                     </span>
                 </figure>
             </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/gente-grande-2.png" alt="Poster Gente Grande 2" class="foto-produto">
-                    <figcaption>
-                        <h4>Gente Grande 2</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/bad-boys-ate-o-fim.png" alt="Poster Bad Boys Até o Fim"
-                        class="foto-produto">
-                    <figcaption>
-                        <h4>Bad Boys Até o Fim</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/coringa-2.png" alt="Poster Coringa 2" class="foto-produto">
-                    <figcaption>
-                        <h4>Coringa 2</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/pulp-fiction.png" alt="Poster Pulp Fiction" class="foto-produto">
-                    <figcaption>
-                        <h4>Pulp Fiction</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/sem-tempo-para-morrer.png" alt="Poster Sem Tempo Para Morrer"
-                        class="foto-produto">
-                    <figcaption>
-                        <h4>Sem Tempo Para Morrer</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/star-wars-the-last-jedi.png" alt="Poster Star Wars The Last Jedi"
-                        class="foto-produto">
-                    <figcaption>
-                        <h4>Star Wars The Last Jedi</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
-            <div class="col col-3">
-                <figure>
-                    <img src="./assets/img/poster/the-batman.png" alt="Poster The Batman" class="foto-produto">
-                    <figcaption>
-                        <h4>The Batman</h4>
-                        <span class="preco">R$ 15,90</span>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                            dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                            quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
-                    </figcaption>
-                    <span class="genero">
-                        <label style="background-color: #070373;">Fantasia</label>
-                        <label style="background-color: #580259;">Drama</label>
-                        <label style="background-color: #D966BA;">Ficção</label>
-                    </span>
-                </figure>
-            </div>
+        <?php } ?>
+
         </div>
     </main>
 </section>
