@@ -86,3 +86,36 @@ div.menu-oculto button.fechar{
     padding: none;
     transition: 0.3s;
 }
+
+.footer {
+    background-color: #210D26;
+    color: #F2F2F2;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #F2F2F2;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #F2F2F2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #F2F2F2;
+    margin-top: 20px;
+}
