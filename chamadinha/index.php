@@ -25,12 +25,12 @@ $resultado = $banco->query($select)->fetchAll();
             <td>Nome</td>
             <td class="text-center">Ações</td>
         </tr>
-        <?php foreach ($resultado as $lista) { ?>
+        <?php foreach ($resultado as $linha) { ?>
             <tr>
-                <td> <?= $lista['id'] ?> </td>
-                <td> <?php echo $lista['nome'] ?> </td>
+                <td> <?= $linha['id'] ?> </td>
+                <td> <?php echo $linha['nome'] ?> </td>
                 <td class="text-center">
-                    <a href="#" class="btn btn-primary">Abrir</a>
+                    <a href="./ficha.php?id_aluno=<?= $linha['id'] ?>" class="btn btn-primary">Abrir</a>
                     <a href="#" class="btn btn-warning">Editar</a>
                     <a href="#" class="btn btn-danger">Excluir</a>
                 </td>
