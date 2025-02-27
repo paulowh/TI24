@@ -33,7 +33,7 @@ $dados = $banco->query($select)->fetch();
     }
 </style>
 <main class="container text-center my-5">
-    <img src="./img/paulin.png" alt="imagem de perfil" class="img-thumbnail">
+    <img src="./img/<?= $dados['img'] ?>" alt="imagem de perfil" class="img-thumbnail">
     <form action="#">
         <label for="nome">Nome</label>
         <input type="text" value="<?= $dados['nome'] ?>" disabled class="form-control">
