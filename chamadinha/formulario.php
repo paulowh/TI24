@@ -1,11 +1,12 @@
 <html lang="pt-br">
 
 <style>
-    body{
+    body {
         display: flex;
         justify-content: center;
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
         width: 200px;
@@ -14,14 +15,13 @@
 </style>
 
 <!-- 
-METODO DE ENVIO -> 
+    METODO DE ENVIO -> 
     GET -> manda informações atraves da URL
     POST -> manda informações atraves do corpo do arquivo...
-Action ->
+    Action ->
     fala para onde deve enviar os dados
 -->
 <form action="./aluno-cadastrar.php" method="POST">
-
     <h2>formulario top</h2>
 
     <input type="text" placeholder="nome" name="nome">
