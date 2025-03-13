@@ -1,7 +1,7 @@
 <?php 
 
 echo '<h1>Aluno-deletetar.php</h1>';
-
+//um comentario top
 $dsn = 'mysql:dbname=db_ti24;host=127.0.0.1';
 $user = 'root';
 $password = '';
