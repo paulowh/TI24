@@ -22,25 +22,27 @@
     <link rel="stylesheet" href="./assets/css/carrossel.css">
     <link rel="stylesheet" href="./assets/css/filmes.css">
     <link rel="stylesheet" href="./assets/css/usuario.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="menu-perfil">
             <a href="./index.php" class="logo">
                 <h1>Cine Box</h1>
             </a>
             <ul class="menu">
                 <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./listarfilmes.php">Filmes</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./sobre.php">Sobre</a></li>
             </ul>
 
             <ul class="menu-icones">
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./usuario-login.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
 
             <!-- menu suspenso/hambúrguer para os mais íntimos -->
@@ -52,9 +54,9 @@
                 <button class="fechar" onclick="javascript:fecharNav()">
                     <i class="bi bi-x"></i>
                 </button>
-                <a href="index.html">Inicio</a>
-                <a href="#">Filmes</a>
-                <a href="#">Sobre</a>
+                <a href="./index.html">Inicio</a>
+                <a href="./listarfilmes.php">Filmes</a>
+                <a href="./sobre.php">Sobre</a>
             </div>
         </nav>
     </header>
