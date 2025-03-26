@@ -1,0 +1,96 @@
+#detalhe {
+    height: 100%;
+}
+
+.foto {
+    width: 100%;
+    max-width: 800px;
+    height: 1000px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.detalhe-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+#detalhe span.avaliacao {
+    color: var(--color-gold);
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    line-height: 60px;
+}
+
+.titulo-filme {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.genero {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.genero span {
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: var(--color-black);
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+#detalhe .preco {
+    margin: 30px 5px;
+    display: flex;
+    justify-content: right;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.versao-filme {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+.versao-filme button {
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px dotted var(--color-black);
+    background-color: var(--color-white);
+
+}
+
+.versao-filme button:focus {
+    border-radius: 7px;
+    border: 2px solid var(--color-black);
+    background-color: #9EB2B7;
+}
+
+.sobre-filme h4 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sobre-filme p {
+    text-align: justify;
+}
+
+#detalhe form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#detalhe form button{
+    margin-top: 2rem;
+    width: 300px;
+    padding: 10px;
+
+}

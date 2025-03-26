@@ -1,13 +1,11 @@
 <div class="col col-3">
     <figure>
-        <img src="./assets/img/poster/avatar-o-caminho-da-agua.png" alt="Poster Avatar o caminho da água"
+        <img src="./assets/img/poster/<?= $value['poster'] ?>" alt="Poster Avatar o caminho da água"
             class="foto-produto">
         <figcaption>
-            <h4>Avatar o Caminho da Água</h4>
-            <span class="preco">R$ 15,90</span>
-            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa rerum
-                dolore voluptates labore deserunt iste. Voluptatem provident necessitatibus nemo tempore
-                quia, deserunt quo ad illo. Eum ut quia necessitatibus!</p>
+            <h4><?= $value['nome']  ?></h4>
+            <span class="preco">  <?= $value['valor_ingresso']  ?> </span>
+            <p class="descricao"><?= $value['descricao']  ?></p>
         </figcaption>
         <span class="genero">
             <label style="background-color: #070373;">Fantasia</label>

@@ -1,6 +1,6 @@
 <?php
+require './classes/Filmes.php';
 include './includes/header.php';
-
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
     session_destroy();
@@ -11,7 +11,8 @@ if (!isset($_SESSION['id_pessoa']) && empty($_SESSION)) {
     header('location:usuario-login.php');
 }
 
-
+$filme = new Filmes();
+$resultadoConsultaFilmes = $filme->exibirListaFilmes();
 
 ?>
 <section id="usuario-principal">

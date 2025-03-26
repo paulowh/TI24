@@ -1,13 +1,13 @@
+<?php foreach ($resultadoConsultaFilmes as $value) { ?>
     <div class="row desc-filme">
-
         <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
-            <img src="./assets/img/poster/jojo-rabbit.png" alt="" class="desc-foto">
+            <img src="./assets/img/poster/<?= $value['poster'] ?>" alt="" class="desc-foto">
         </div>
 
         <div class="col-12 col-lg-8 col-sm-12 col-md-12 mt-3">
-            <h3 class="title">Jojo Rabbit</h3>
+            <h3 class="title"><?= $value['nome'] ?></h3>
             <p class="desc-descricao">
-                Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                <?= $value['descricao'] ?>
             </p>
         </div>
 
@@ -21,5 +21,5 @@
                 Excluir
             </a>
         </div>
-
     </div>
+<?php } ?>
