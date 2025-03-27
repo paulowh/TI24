@@ -9,7 +9,9 @@
                             <input
                                 id="<?= $value['nome'] ?>"
                                 name="<?= $value['nome'] ?>"
-                                type="checkbox" <?= isset($_GET[$value['nome']]) ? 'checked' : '' ?>>
+                                type="checkbox" 
+                                <?= isset($_GET[$value['nome']]) ? 'checked' : '' ?>
+                                >
                             <div class="checkmark"></div>
                             <?= $value['nome'] ?>
                         </label>
@@ -20,7 +22,7 @@
             </div>
             <div class="col-10 col-lg-10 col-xs-12">
                 <?php $qntd = 4;
-                include './includes/filmes_listar.php'; ?>
+                include './includes/filme_lista.php'; ?>
             </div>
         </div>
     </main>
