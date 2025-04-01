@@ -1,0 +1,149 @@
+#login,
+#cadastro {
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px 0;
+    background: linear-gradient(112deg, #580259 -0.99%, #210D26 96.79%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.login {
+    max-width: 560px;
+    max-height: 680px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 244, 244, 0.9);
+    border-radius: 20px;
+    transition: 2s;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 60px;
+}
+
+#login h3,
+#login h4,
+#login p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#login h3 {
+    font-weight: 900;
+    margin: 50px 0;
+
+}
+
+#login h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    height: 50px;
+}
+
+#login input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    margin: 17px 0;
+}
+
+.lembre>label {
+    cursor: pointer;
+}
+
+.ajuda {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+.ajuda:hover {
+    text-decoration: underline;
+}
+
+#login .entrar {
+    height: 45px;
+    width: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .entrar {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#cadastro main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cadastro-pessoa {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(249, 244, 244, 0.9);
+    max-width: 560px;
+    min-width: 500px;
+    border-radius: 40px;
+    padding: 40px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px;
+
+}
+
+.cadastro-pessoa label {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.cadastro-pessoa h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.cadastro-pessoa input[type="text"],
+.cadastro-pessoa input[type="month"],
+.cadastro-pessoa input[type="number"],
+.cadastro-pessoa input[type="password"],
+.cadastro-pessoa select {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    height: 40px;
+    width: 100%;
+}
+
+.cadastro-pessoa input[type="submit"] {
+    width: 30%;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    align-self: end;
+    margin-top: 15px;
+}
